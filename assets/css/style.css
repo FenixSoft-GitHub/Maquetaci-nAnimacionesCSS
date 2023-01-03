@@ -59,6 +59,7 @@ body {
 
 .navbar .navbar__content img {
     width: 50px;
+    box-shadow: 5px 5px 13px black;
 }
 
 .navbar .navbar__content ul {
@@ -122,7 +123,8 @@ body {
 .side-content p {
     transform: rotate(-90deg);
     font-size: 36px;
-
+    font-weight: 500;
+    text-shadow: 2px 2px 5px black;
     grid-row: 1 / 2;
     grid-column: 1/2;
     opacity: 0;
@@ -286,9 +288,10 @@ body {
     cursor: pointer;
     display: grid;
     place-items: center;
-    width: 50%;
+    width: 55%;
     height: 100%;
     border-radius: 10px;
+    box-shadow: 5px 5px 13px black;
 }
 
 .cards .card img {

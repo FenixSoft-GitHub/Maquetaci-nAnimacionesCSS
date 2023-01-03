@@ -31,27 +31,27 @@ images.forEach((image) => {
     modal.classList.add("visible");
     removeChilds();
 
-    if (e.target.id === "deadpool") {
+    if (e.target.id === "spiderman") {
       const objectImages = {
-        image1: "./assets/deadpool.png",
-        image2: "./assets/deadpool/slider-1.png",
-        image3: "./assets/deadpool/slider-2.png",
+        image1: "./assets/img/spider-man_db8af43d-b692-4986-a385-e645d286e142.png",
+        image2: "./assets/img/spider-man-2_b24c96b3-6d59-496f-815d-32b25eba0141.png",
+        image3: "./assets/img/spider-man-3_19f5c510-8059-4477-abf8-42249a5445b7.png",
       };
-      createImg(objectImages, "imagen deadpool");
-    } else if (e.target.id === "spiderman") {
+      createImg(objectImages, "Imagen de Spiderman");
+    } else if (e.target.id === "robin") {
       const objectImages = {
-        image1: "./assets/spiderman.png",
-        image2: "./assets/spiderman/slider-1.png",
-        image3: "./assets/spiderman/slider-2.png",
+        image1: "./assets/img/robin-card1.png",
+        image2: "./assets/img/robin-card2.webp",
+        image3: "./assets/img/robin-card3.png",
       };
-      createImg(objectImages, "imagen spiderman");
-    } else if (e.target.id === "joker") {
+      createImg(objectImages, "Imagen de Robin");
+    } else if (e.target.id === "batman") {
       const objectImages = {
-        image1: "./assets/joker.png",
-        image2: "./assets/joker/slider-1.png",
-        image3: "./assets/joker/slider-2.png",
+        image1: "./assets/img/batman-card1.png",
+        image2: "./assets/img/batman-card2.png",
+        image3: "./assets/img/batman-card3.png",
       };
-      createImg(objectImages, "imagen joker");
+      createImg(objectImages, "Imagen de Batman");
     }
   });
 });
@@ -60,7 +60,8 @@ function closeModal() {
   modal.classList.remove("visible");
   modal.classList.add("hidden");
 }
-const close = document.querySelector(".icon-close");
+
+const close = document.querySelector(".modal-content__close");
 const buy = document.querySelector("#buy");
 
 close.addEventListener("click", closeModal);
